@@ -1,0 +1,117 @@
+/* =========================================
+   ESTILOS GENERALES Y TIPOGRAFÍA
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f6; /* Fondo gris muy claro para resaltar las tarjetas en blanco */
+    color: #333333;
+}
+
+/* =========================================
+   ENCABEZADO Y FOOTER
+   ========================================= */
+#encabezado {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-bottom: 4px solid #0dcaf0; /* Línea de acento color cian */
+}
+
+#encabezado img {
+    width: auto !important;  /* El !important anula los 400px que están fijos en el HTML */
+    height: 80px;            /* Define una altura fija y razonable para la barra de navegación */
+    object-fit: contain;
+}
+
+footer {
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0dcaf0;
+}
+
+/* =========================================
+   MENÚ PRINCIPAL (index.jsp)
+   ========================================= */
+#ejercicios {
+    background-color: #ffffff !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem 2rem !important;
+    border: 1px solid #eaeaea;
+}
+
+#ejercicios h1 {
+    font-weight: 700;
+    color: #212529;
+    letter-spacing: -0.5px;
+}
+
+/* Efectos de los botones del menú */
+.btn-outline-dark {
+    border-width: 2px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: #ffffff;
+}
+
+.btn-outline-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(33, 37, 41, 0.2);
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.tit h4 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* =========================================
+   TARJETAS Y PANELES (Resultados JSP)
+   ========================================= */
+.panel {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.panel-heading {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 18px 20px;
+    border-bottom: 3px solid #0dcaf0;
+}
+
+.panel-body {
+    padding: 25px;
+    font-size: 1.1rem;
+}
+
+.panel-body p {
+    margin-bottom: 0.8rem;
+    border-bottom: 1px dashed #eaeaea;
+    padding-bottom: 8px;
+}
+
+.panel-body p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   FORMULARIOS Y TABLAS
+   ========================================= */
+.form-control, .form-select {
+    border: 2px solid #e0e0e0;
+    padding: 0.6rem 1.2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
+
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
